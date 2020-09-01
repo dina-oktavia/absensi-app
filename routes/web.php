@@ -25,10 +25,10 @@ Route::get('forgot', function (){
     return view('forgot');
 });
 
-Route::get('dashboard', function (){
-    return view('dashboard');
-});
+Route::get('/dashboard', 'DashboardController@index');
+Route::get('/home', 'HomeController@index');
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+
+// ->name('home');

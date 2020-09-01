@@ -25,7 +25,7 @@
 
     @endif
 
-          @yield('isi')
+          @yield('content')
 
 
   </div>
